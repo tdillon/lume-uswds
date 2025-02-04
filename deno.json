@@ -1,0 +1,18 @@
+{
+    "imports": {
+        "@uswds/uswds": "npm:@uswds/uswds@^3.11.0",
+        "lume/": "https://deno.land/x/lume@v2.5.1/"
+    },
+    "tasks": {
+        "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
+        "build": "deno task lume",
+        "serve": "deno task lume -s"
+    },
+    "compilerOptions": {
+        "types": [
+            "lume/types.ts"
+        ]
+    },
+    "nodeModulesDir": "auto",
+    "lock": false
+}
